@@ -1,0 +1,78 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name[100];
+	float w,m,g=9.8;
+	int c,planet;
+	
+	printf("enter name of the person:");
+	scanf("%s",&name);
+	printf("enter weight of %s in earth(in kg):",name);
+	scanf("%f",&w);
+	m=w/g;
+	do
+	{
+		printf("\nwhat planet do you want?:");
+		printf("\n1.mercury\n2.venus\n3.mars\n4.jupiter\n5.saturn\n6.uranus\n7.neptune\n8.moon");
+		printf("\n enter planet:");
+		scanf("%d",&planet);
+		switch(planet)
+		{
+			case 1:;
+				float g=3.7,z;
+				z=m*g;
+				printf("\nweight of %s in mercury(in kg):%.1f",name,z);
+				
+				break;
+			case 2:;
+				float gb=8.87,zb;
+				zb=m*gb;
+			    	printf("\nweight of %s in venus(in kg):%.1f",name,zb);
+			
+				break;
+			case 3:;
+				float gc=3.71,zc;
+				zc=m*gc;
+			    	printf("\nweight of %s in mars(in kg):%.1f",name,zc);
+				
+				break;
+			case 4:;
+				float gd=24.7,zd;
+				zd=m*gd;
+			    	printf("\nweight of %s in jupiter(in kg):%.1f",name,zd);
+				
+				break;
+			case 5:;
+				float ge=10.44,ze;
+				ze=m*ge;
+			    	printf("\nweight of %s in saturn(in kg):%.1f",name,ze);
+				
+				break;
+			case 6:;
+				float gf=8.69,zf;
+				zf=m*gf;
+			    	printf("\nweight of %s in uranus(in kg):%.1f",name,zf);
+				
+				break;
+			case 7:;
+				float gh=11.1,zh;
+				zh=m*gh;
+			    	printf("\nweight of %s in neptune(in kg):%.1f",name,zh);
+			    	
+				break;
+			case 8:;
+				float ga=1.62,za;
+				
+			    	za=m*ga;
+			    	printf("\nweight of %s in moon(in kg):%.1f",name,za);
+			
+				
+				break;
+			
+		}
+	printf("\ndo you want to continue?\n1.yes\n2.no");
+	scanf("%d",&c);
+	}while(c!=2);
+return 0;
+}
